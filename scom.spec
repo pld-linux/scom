@@ -28,8 +28,8 @@ zarz±dcy plików ze wsparciem dla archiwów, FTP itd.
 
 %build
 automake -a -c
-CFLAGS="%{?debug:-O -g}%{!?debug:$RPM_OPT_FLAGS} -I/usr/include/ncurses"
-CXXFLAGS="%{?debug:-O -g}%{!?debug:$RPM_OPT_FLAGS} \
+CFLAGS="%{?debug:-O0 -g}%{!?debug:$RPM_OPT_FLAGS} -I/usr/include/ncurses"
+CXXFLAGS="%{?debug:-O0 -g}%{!?debug:$RPM_OPT_FLAGS} \
 	-I/usr/include/ncurses -fno-rtti -fno-exceptions -fno-implicit-templates"
 %configure
 
