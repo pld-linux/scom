@@ -5,8 +5,6 @@ Version:	0.3.4
 Release:	1
 License:	GPL
 Group:		Applications/Shells
-Group(de):	Applikationen/Shells
-Group(pl):	Aplikacje/Pow³oki
 Source0:	http://www.poulsen.org/sc/snapshots/sc-%{version}.tar.gz
 Patch0:		sc-automake.patch
 URL:		http://www.poulsen.org/sc/
