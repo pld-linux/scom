@@ -7,11 +7,13 @@ License:	GPL
 Group:		Applications/Shells
 Source0:	http://www.poulsen.org/sc/snapshots/sc-%{version}.tar.gz
 Patch0:		sc-automake.patch
+Patch1:		sc-am_fix.patch
 URL:		http://www.poulsen.org/sc/
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	libstdc++-devel
 BuildRequires:	ncurses-devel >= 5.0
 BuildRequires:	zlib-devel
-BuildRequires:	automake
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -27,8 +29,12 @@ plików ze wsparciem dla archiwów, FTP itd.
 %prep
 %setup -q -n sc-%{version}
 %patch0 -p1
+%patch1 -p1
 
 %build
+rm -f missing
+aclocal
+autoconf
 automake -a -c
 CFLAGS="%{rpmcflags} -I/usr/include/ncurses"
 CXXFLAGS="%{rpmcflags} \
