@@ -1,0 +1,16 @@
+diff -Nru sc-0.3.4/Makefile.am sc-0.3.4.new/Makefile.am
+--- sc-0.3.4/Makefile.am	Tue Jun 27 14:06:10 2000
++++ sc-0.3.4.new/Makefile.am	Wed Jun 28 03:50:24 2000
+@@ -4,12 +4,3 @@
+ 
+ EXTRA_DIST = sc.kdevprj AUTHORS COPYING ChangeLog INSTALL README TODO sc.lsm scedit 
+ 
+-install-exec-local:
+-	$(mkinstalldirs) /usr/bin/
+-	$(INSTALL_SCRIPT) scedit /usr/bin/scedit
+-
+-uninstall-local:
+-	-rm -f /usr/bin/scedit
+-
+-####### kdevelop will overwrite this part!!! (end)############
+-AUTOMAKE_OPTIONS = foreign
