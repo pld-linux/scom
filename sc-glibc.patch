@@ -1,0 +1,35 @@
+--- sc-0.5.1/sc/sc_shell.h.orig	Thu Nov  9 16:01:47 2000
++++ sc-0.5.1/sc/sc_shell.h	Sat Mar  2 11:39:15 2002
+@@ -1,5 +1,5 @@
+-#ifndef _SC_SHELL
+-#define _SC_SHELL
++#ifndef _SC_SHELL_H
++#define _SC_SHELL_H
+ 
+ #include <string>
+ 
+@@ -11,4 +11,4 @@
+ 
+ bool PrintFile(const string& filename);
+ 
+-#endif //_SC_SHELL
++#endif //_SC_SHELL_H
+--- sc-0.5.1/sc/sc_signals.h.orig	Mon Nov  6 17:24:28 2000
++++ sc-0.5.1/sc/sc_signals.h	Sat Mar  2 11:45:33 2002
+@@ -15,8 +15,8 @@
+  *                                                                         *
+  ***************************************************************************/
+ 
+-#ifndef _SC_SIGNALS
+-#define _SC_SIGNALS
++#ifndef _SC_SIGNALS_H
++#define _SC_SIGNALS_H
+ 
+ extern bool _signal_windowresized;
+ 
+@@ -24,4 +24,4 @@
+ void ReleaseSignalHandlers();
+ //void WinchHandler(int);
+ 
+-#endif //_SC_SIGNALS
++#endif //_SC_SIGNALS_H

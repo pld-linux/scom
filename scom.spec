@@ -1,14 +1,15 @@
 Summary:	Sunshine Commander
 Summary(pl):	Sunshine Commander
 Name:		scom
-Version:	0.3.4
-Release:	3
+Version:	0.5.1
+Release:	1
 License:	GPL
 Group:		Applications/Shells
-Source0:	http://www.poulsen.org/sc/snapshots/sc-%{version}.tar.gz
+Source0:	http://www.poulsen.org/sc-%{version}.tar.gz
 Patch0:		sc-automake.patch
 Patch1:		sc-am_fix.patch
-URL:		http://www.poulsen.org/sc/
+Patch2:		sc-glibc.patch
+URL:		http://sc.poulsen.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libstdc++-devel
@@ -30,6 +31,7 @@ plików ze wsparciem dla archiwów, FTP itd.
 %setup -q -n sc-%{version}
 %patch0 -p1
 %patch1 -p1
+%patch2 -p1
 
 %build
 rm -f missing
@@ -48,6 +50,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
+
+install scedit $RPM_BUILD_ROOT%{_bindir}
 
 gzip -9nf AUTHORS ChangeLog README TODO
 
