@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Applications/Shells
 Source0:	http://www.poulsen.org/sc-%{version}.tar.gz
+# Source0-md5:	0a71e1272d52e9309281da1652c872b9
 Patch0:		sc-automake.patch
 Patch1:		sc-am_fix.patch
 Patch2:		sc-glibc.patch
