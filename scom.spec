@@ -1,15 +1,19 @@
 Summary:	Sunshine Commander
+Summary(pl):	Sunshine Commander
 Name:		scom
 Version:	0.3.4
 Release:	1
 License:	GPL
-Group:		Shells
+Group:		Applications/Shells
+Group(de):	Applikationen/Shells
+Group(pl):	Aplikacje/Pow³oki
 Source0:	http://www.poulsen.org/sc/snapshots/sc-%{version}.tar.gz
 Patch0:		sc-automake.patch
 URL:		http://www.poulsen.org/sc/
 BuildRequires:	libstdc++-devel
 BuildRequires:	ncurses-devel >= 5.0
 BuildRequires:	zlib-devel
+BuildRequires:	automake
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -19,8 +23,8 @@ filecentred tasks within a single program, including full
 linux-filesystem support, archivehandling, FTP-handling etc.
 
 %description -l pl
-Sunshine Commander to próba stworzenia bazuj±cego na konsoli
-zarz±dcy plików ze wsparciem dla archiwów, FTP itd.
+Sunshine Commander to próba stworzenia bazuj±cego na konsoli zarz±dcy
+plików ze wsparciem dla archiwów, FTP itd.
 
 %prep
 %setup -q -n sc-%{version}
