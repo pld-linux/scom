@@ -35,7 +35,7 @@ plików ze wsparciem dla archiwów, FTP itd.
 
 %build
 rm -f missing
-aclocal
+%{__aclocal}
 %{__autoconf}
 %{__automake}
 CFLAGS="%{rpmcflags} -I/usr/include/ncurses"
