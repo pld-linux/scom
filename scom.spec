@@ -36,8 +36,8 @@ plików ze wsparciem dla archiwów, FTP itd.
 %build
 rm -f missing
 aclocal
-autoconf
-automake -a -c -f
+%{__autoconf}
+%{__automake}
 CFLAGS="%{rpmcflags} -I/usr/include/ncurses"
 CXXFLAGS="%{rpmcflags} \
 	-I/usr/include/ncurses -fno-rtti -fno-exceptions -fno-implicit-templates"
