@@ -1,7 +1,7 @@
 Summary:	Sunshine Commander
 Name:		scom
 Version:	0.3.4
-Release:	1
+Release:	2
 License:	GPL
 Group:		System Environment/Shells
 Vendor:		Morten Poulsen <sc@poulsen.org>
