@@ -3,8 +3,7 @@ Name:		scom
 Version:	0.3.4
 Release:	2
 License:	GPL
-Group:		System Environment/Shells
-Vendor:		Morten Poulsen <sc@poulsen.org>
+Group:		Shells
 Source0:	http://www.poulsen.org/sc/snapshots/sc-%{version}.tar.gz
 Patch0:		sc-automake.aptch
 URL:		http://www.poulsen.org/sc/
