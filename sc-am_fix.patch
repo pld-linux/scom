@@ -1,0 +1,7 @@
+--- ./sc/Makefile.am.org	Tue Jun 27 14:06:10 2000
++++ ./sc/Makefile.am	Mon Feb 25 14:24:41 2002
+@@ -8,4 +8,3 @@
+ EXTRA_DIST = main.cpp fm_conf.cpp fm_conio.cpp fm_console.cpp fm_debug.cpp fm_dircon.cpp fm_editcon.cpp fm_entry.cpp fm_fileinfo.cpp fm_helpscreens.cpp fm_init.cpp fm_keyboard.cpp fm_menu.cpp fm_scd.cpp fm_sort.cpp fm_str.cpp fm_sysinfo.cpp fm_textfile.cpp fm_tree.cpp fm_vfs.cpp fm_viewcon.cpp fm_window.cpp inifile.cpp sc_action.cpp sc_file.cpp sc_ftp.cpp sc_shell.cpp sc_usermenu.cpp unicon.cpp array.h fm_conf.h fm_conio.h fm_console.h fm_debug.h fm_defs.h fm_dircon.h fm_editcon.h fm_entry.h fm_fileinfo.h fm_helpscreens.h fm_init.h fm_keyboard.h fm_menu.h fm_scd.h fm_sort.h fm_str.h fm_sysinfo.h fm_textfile.h fm_tree.h fm_vfs.h fm_viewcon.h fm_window.h inifile.h sc_action.h sc_file.h sc_ftp.h sc_shell.h sc_timer.h sc_usermenu.h stopwatch.h target.h unicon.h sc.gdt sc.gpr compiled.h sc.mak unzip.c unzip.h zip.c zip.h sc_signals.h sc_signals.cpp sc_archive.cpp sc_archive.h sc_tipofday.cpp sc_tipofday.h ChangeLog.h README.h ftplib.c ftplib.h strnatcmp.c strnatcmp.h 
+ 
+ ####### kdevelop will overwrite this part!!! (end)############
+-bin_PROGRAMS = sc
