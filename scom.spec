@@ -2,7 +2,7 @@ Summary:	Sunshine Commander
 Summary(pl):	Sunshine Commander
 Name:		scom
 Version:	0.3.4
-Release:	1
+Release:	3
 License:	GPL
 Group:		Applications/Shells
 Source0:	http://www.poulsen.org/sc/snapshots/sc-%{version}.tar.gz
