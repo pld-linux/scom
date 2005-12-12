@@ -39,9 +39,9 @@ rm -f missing
 %{__aclocal}
 %{__autoconf}
 %{__automake}
-CFLAGS="%{rpmcflags} -I/usr/include/ncurses"
+CFLAGS="%{rpmcflags} -I%{_includedir}/ncurses"
 CXXFLAGS="%{rpmcflags} \
-	-I/usr/include/ncurses -fno-rtti -fno-exceptions -fno-implicit-templates"
+	-I%{_includedir}/ncurses -fno-rtti -fno-exceptions -fno-implicit-templates"
 %configure
 
 %{__make}
