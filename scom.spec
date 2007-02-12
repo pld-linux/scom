@@ -1,5 +1,5 @@
 Summary:	Sunshine Commander
-Summary(pl.UTF-8):   Sunshine Commander
+Summary(pl.UTF-8):	Sunshine Commander
 Name:		scom
 Version:	0.5.1
 Release:	1
