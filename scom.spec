@@ -1,5 +1,5 @@
 Summary:	Sunshine Commander
-Summary(pl):	Sunshine Commander
+Summary(pl.UTF-8):   Sunshine Commander
 Name:		scom
 Version:	0.5.1
 Release:	1
@@ -24,9 +24,9 @@ crossplatform, filemanager, which allows the user to do common
 filecentred tasks within a single program, including full
 linux-filesystem support, archivehandling, FTP-handling etc.
 
-%description -l pl
-Sunshine Commander to próba stworzenia bazuj±cego na konsoli zarz±dcy
-plików ze wsparciem dla archiwów, FTP itd.
+%description -l pl.UTF-8
+Sunshine Commander to prÃ³ba stworzenia bazujÄ…cego na konsoli zarzÄ…dcy
+plikÃ³w ze wsparciem dla archiwÃ³w, FTP itd.
 
 %prep
 %setup -q -n sc-%{version}
